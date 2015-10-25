@@ -1,7 +1,7 @@
-**Library dependencies**
+##Library dependencies
 The script run_analysis.R uses two external R-libraries, namely readr and dplyr.
 
-**Process steps**
+##Process steps
 1. The original data is divided into two datasets, namely trainning and
 testing datasets. This scripts merges the datasets together using
 rbind function for the data.frames.
@@ -19,7 +19,7 @@ Activity and subject and saved as a text file "tidy_data_step4.txt".
 5. Mean of each variable has been calculated over the measurements of
 the same activities and presented separately for each subject.
 
-**Variables**
+##Variables
 The varables are mean and standard deviation estimates from the
 accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and
 tGyro-XYZ. These time domain signals (prefix 't' to denote time) were
@@ -46,26 +46,26 @@ These signals were used to estimate variables of the feature vector for each pat
 directions. The additional mean() and std() in the variable names
 indicate, mean and standard deviation values, respectively.
 
-The units for accelerations "*acc*" are in standard gravity units
-'g'. The units for the  angular velocity measurements "*gyro*" are in
+The units for accelerations "acc" are in standard gravity units
+'g'. The units for the  angular velocity measurements "gyro" are in
 radians/seconds.
 
 Moreover the variables are normalized and bounded within [-1,1].
 The variable names are:
-*tBodyAcc-XYZ
-*tGravityAcc-XYZ
-*tBodyAccJerk-XYZ
-*tBodyGyro-XYZ
-*tBodyGyroJerk-XYZ
-*tBodyAccMag
-*tGravityAccMag
-*tBodyAccJerkMag
-*tBodyGyroMag
-*tBodyGyroJerkMag
-*fBodyAcc-XYZ
-*fBodyAccJerk-XYZ
-*fBodyGyro-XYZ
-*fBodyAccMag
-*fBodyAccJerkMag
-*fBodyGyroMag
-*fBodyGyroJerkMag
+* tBodyAcc-XYZ
+* tGravityAcc-XYZ
+* tBodyAccJerk-XYZ
+* tBodyGyro-XYZ
+* tBodyGyroJerk-XYZ
+* tBodyAccMag
+* tGravityAccMag
+* tBodyAccJerkMag
+* tBodyGyroMag
+* tBodyGyroJerkMag
+* fBodyAcc-XYZ
+* fBodyAccJerk-XYZ
+* fBodyGyro-XYZ
+* fBodyAccMag
+* fBodyAccJerkMag
+* fBodyGyroMag
+* fBodyGyroJerkMag
