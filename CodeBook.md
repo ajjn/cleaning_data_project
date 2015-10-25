@@ -1,5 +1,5 @@
 ##Library dependencies
-The script run_analysis.R uses two external R-libraries, namely readr and dplyr.
+The script run_analysis.R uses two external R-libraries, namely *readr* and *dplyr*.
 
 ##Process steps
 1. The original data is divided into two datasets, namely trainning and
@@ -15,12 +15,12 @@ the corresponding columns from the dataset.
 corresponding activity name. Then the activity and subject names have been added to the
 dataset by function cbind.
 4. The resulting tidy dataset has been sorted by
-Activity and subject and saved as a text file "tidy_data_step4.txt".
+activity and subject and saved as a text file "tidy_data_step4.txt".
 5. Mean of each variable has been calculated over the measurements of
 the same activities and presented separately for each subject.
 
 ##Variables
-The varables are mean and standard deviation estimates from the
+The varbles are mean and standard deviation estimates from the
 accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and
 tGyro-XYZ. These time domain signals (prefix 't' to denote time) were
 captured at a constant rate of 50 Hz. Then they were filtered using a
@@ -46,11 +46,6 @@ These signals were used to estimate variables of the feature vector for each pat
 directions. The additional mean() and std() in the variable names
 indicate, mean and standard deviation values, respectively.
 
-The units for accelerations "acc" are in standard gravity units
-'g'. The units for the  angular velocity measurements "gyro" are in
-radians/seconds.
-
-Moreover the variables are normalized and bounded within [-1,1].
 The variable names are:
 * tBodyAcc-XYZ
 * tGravityAcc-XYZ
@@ -69,3 +64,9 @@ The variable names are:
 * fBodyAccJerkMag
 * fBodyGyroMag
 * fBodyGyroJerkMag
+
+The units for accelerations "acc" are in standard gravity units
+'g'. The units for the  angular velocity measurements "gyro" are in
+radians/seconds.
+
+Moreover the variables are normalized and bounded within [-1,1].
